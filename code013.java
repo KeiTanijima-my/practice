@@ -48,8 +48,8 @@ public class code013 {
         int totalSales =0;
         for (int i = 0; i < eachCustomer.size(); i++) {
             for (int j = 0; j < sortedEachItemValue.size(); j++) {
-                boolean isBuy = eachCustomer.get(i) >= sortedEachItemValue.get(j);
-                if (isBuy) {
+                boolean canBuy = eachCustomer.get(i) >= sortedEachItemValue.get(j);
+                if (canBuy) {
                     totalSales += sortedEachItemValue.get(j);
                     break;
                 }
